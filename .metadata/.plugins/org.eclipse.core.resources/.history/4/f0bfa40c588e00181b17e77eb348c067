@@ -1,0 +1,13 @@
+import java.sql.Date;
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.Scanner;
+public class Person {
+private int day;
+private String name;
+private int month;
+private int year;
+
+LocalDate today, dob, dob1, dob2; 
+Period p;
+}

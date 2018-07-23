@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class PersonTest {
+public static void main(String[] args) {
+	Person p1=new Person("Ram", 5, 6, 1980);
+	Person p2=new Person("Shyam", 2, 3, 1987);
+	
+	System.out.println("Enter First person details:");
+	
+}
+}

@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class palindrome {
+public static void main(String args[]) {
+	
+	int number=121,sum=0;
+	int num=number;
+	while(num!=0)
+	{
+		int rem=num%10;
+		sum=(sum*10)+rem;
+		num=num/10;
+		
+	}
+	if(sum==number)
+		System.out.println("its a palindrome");
+	else
+		System.out.println("its not a palindrome");
+}
+}

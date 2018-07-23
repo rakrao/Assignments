@@ -1,0 +1,15 @@
+
+public class Telivision {
+String state;
+int volume;
+int channel;
+public Telivision(String state, int volumr, int channel) {
+	super();
+	this.state=state;
+	this.volume=volume;
+	this.channel=channel;
+	// TODO Auto-generated constructor stub
+}
+
+
+}

@@ -1,0 +1,35 @@
+
+
+import java.util.Scanner;
+public class ArrayList {
+	static int n;
+	static String name;
+	static String key;
+public static void main(String[] args) {
+			 
+	
+	System.out.println("Enter number of cities :");
+	
+	Scanner scanner = new Scanner(System.in);
+	n=scanner.nextInt();
+	System.out.println("Enter city name :");
+	name=scanner.nextLine();
+	
+	 
+	 
+	 
+		 if(key.equals(name))
+		 {
+			 System.out.println("Found");
+			 
+		 }
+		 else
+			 System.out.println("Not Found"); 
+	 }
+}
+
+
+
+
+
+

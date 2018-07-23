@@ -1,0 +1,7 @@
+
+public class Telivision {
+String state;
+int volume;
+int channel;
+
+}

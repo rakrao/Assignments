@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class SearchName {
+private static Scanner scanner;
+
+public static void main(String[] args) {
+	String name;
+	int n,i=0;
+	scanner = new Scanner(System.in);
+	System.out.println("Enter the number of names:");
+	n=scanner.nextInt();
+	String names[] = new String[n];
+	System.out.println("Enter the names:");
+	while(n>=0)
+	{
+		names[i]=scanner.nextLine();
+		i++;
+		n--;
+	}
+	
+	for(i=0;i<n;i++)
+	{
+		
+		String key = "rao";
+		if(names[i]==key)
+		{
+			System.out.println("Found");
+		}
+		else
+			System.out.println("NotFound");
+		
+	}
+}
+}

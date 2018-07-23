@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class TestEmp {
+public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	Emp emp=new Emp();
+	System.out.println("Enter employee id");
+	emp.id=scanner.nextInt();
+	System.out.println("Enter employee name");
+	emp.name=scanner.nextLine();
+	System.out.println("Enter employee monthly basic");
+	emp.monthlybasic=scanner.nextDouble();
+	emp.setMonthlybasic(emp.monthlybasic);
+	 double annual=emp.getAnnualBasic();
+	System.out.println("annual="+annual);
+	System.out.println("MonthlyGrossSalary="+emp.getMonthlyGrossSalary());
+	System.out.println("MonthlyDeduction="+emp.getMonthlyDeduction());
+}
+}

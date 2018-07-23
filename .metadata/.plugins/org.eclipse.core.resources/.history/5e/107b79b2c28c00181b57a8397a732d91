@@ -1,0 +1,53 @@
+
+import java.util.Iterator;
+import java.util.Scanner;
+public class ArrayList {
+public static void main(String[] args) {
+			 
+	String searchString="";
+	ArrayList arrayList = new ArrayList();
+	
+	arrayList.add("Delhi");
+	arrayList.add("kolkata");
+	arrayList.add("bangalore");
+	arrayList.add("pune");
+	arrayList.add("mumbai");
+	arrayList.add("hyderabad");
+	arrayList.add("chennai");
+	
+	searchString="mumbai";
+	search(searchString, arrayList);
+	
+	searchString="bhopal";
+	search(searchString, arrayList);
+}
+
+public static void search(String searchStr, ArrayList<String> aList)
+{
+	boolean found = false;
+	Iterator<String> iter = aList.iterator();
+	String curItem='';
+	int pos=0;
+	
+	while(iter.hasNext()==true)
+	{
+		pos=pos+1;
+		curItem=(String) iter.next();
+		if(curItem.equals(searchStr)) {
+			found=true;
+			break;
+		}
+		
+	}
+	if(found==false)
+		pos=0;
+	if(pos!=0)
+	{
+		System.out.println(searchStr + " City Found in position :" +pos);
+	}
+	else
+	{
+		System.out.println(searchStr + " City not Found");
+	}
+}
+}

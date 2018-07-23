@@ -1,0 +1,5 @@
+public class npal
+{
+	Scanner sc=new Scanner(System.in);
+	String []str=new String[10];
+}

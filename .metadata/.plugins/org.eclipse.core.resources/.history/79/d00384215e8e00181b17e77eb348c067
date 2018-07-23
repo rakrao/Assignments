@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class npal
+{
+	Scanner sc=new Scanner(System.in);
+	String []str=new String[10];
+	String []rev=new String[10];
+	int loc[]=new int[10];
+	int size[]=new int [10];
+	int id=0;
+	int temp=0;
+	
+	for(int i=0;i<10;i++)
+	{
+		System.out.println("Enter a string");
+		str[i]=sc.nextLine();
+		rev[i]="";
+		for(int j=str[i].length()-1;j>=0;j--)
+		{
+			rev[i]=rev[i]+str[i].charAt(j);
+		}
+	}
+	for(int i=0;i<10;i++)
+	{
+		if(str[i].equals(rev[i]))
+		{
+			loc[id]=1;
+			id+=1;
+		}
+	}
+	for(int i=0;i<id;i++)
+	{
+		size[i]=str[loc[i]].length();
+	}
+	for(int i=0;i<id;i++)
+	{
+		
+	}
+}

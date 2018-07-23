@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class ArrayList {
+public static void main(String[] args) {
+			 
+	String searchString="";
+	ArrayList<String> arrayList = new ArrayList<String>();
+	
+
+}
+}

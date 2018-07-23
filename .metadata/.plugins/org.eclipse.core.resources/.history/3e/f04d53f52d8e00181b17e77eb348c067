@@ -1,0 +1,29 @@
+import java.sql.Date;
+import java.util.Scanner;
+public class Person {
+private String name;
+private String input;
+private Date dob;
+public Person(String n, int d, int m, int y) {
+	super();
+	this.name=name;
+	this.dob=dob;
+}
+System.out.println("Enter the name of person");
+Scanner scanner=new Scanner(System.in);
+input=scanner.nextLine();
+System.out.println("Enter the dob in format dd/mm/yyyy");
+dob=scanner.nextLine();
+public void display()
+{
+	String input;
+	System.out.println("Name:"+input);
+	System.out.println("Date of Birth:"+dob);
+}
+
+public void olderOne(Person p)
+{
+	
+
+}
+}

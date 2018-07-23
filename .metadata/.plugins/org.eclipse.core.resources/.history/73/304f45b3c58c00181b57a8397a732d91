@@ -1,0 +1,55 @@
+
+import java.util.Iterator;
+import java.util.Scanner;
+public class ArrayList {
+public static void main(String[] args) {
+			 
+	String searchString=null;
+	
+	
+	Scanner scanner = new Scanner(System.in);
+	
+	
+	
+	 searchString="mumbai";
+	ArrayList arrayList = null;
+	search(searchString, arrayList);
+	
+	searchString="bhopal";
+	search(searchString, arrayList);
+}
+
+
+
+public static void search(String searchStr, ArrayList aList)
+{
+	boolean found = false;
+	
+	String curItem=null;
+	int pos=0;
+	String searchString=null;
+	while(searchString!=null)
+	{
+		
+		pos=pos+1;
+		curItem=searchString;
+		if(curItem.equals(searchStr)) {
+			found=true;
+			break;
+		}
+		
+	}
+	if(found==false)
+		pos=0;
+	if(pos!=0)
+	{
+		System.out.println(searchStr + " City Found in position :" +pos);
+	}
+	else
+	{
+		System.out.println(searchStr + " City not Found");
+	}
+}
+
+
+}

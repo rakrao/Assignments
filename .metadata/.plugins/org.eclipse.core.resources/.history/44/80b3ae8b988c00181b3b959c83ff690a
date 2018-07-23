@@ -1,0 +1,78 @@
+
+public class Emp {
+int id;
+String name;
+double monthlybasic;
+double pfRate=0.10;
+static float hra=(float) 0.5;
+static double medical=1250;
+
+public double getPf()
+{
+	return pfRate;
+}
+
+public void setPf(float pf)
+{
+	this.pfRate = pf;
+}
+
+public double getAnnualBasic()
+{
+	return 12*monthlybasic; 
+}
+
+public double getMonthlybasic() {
+	return (monthlybasic*12)*hra;
+}
+
+public void setMonthlybasic(double a) {
+	this.monthlybasic = a;
+}
+
+public double getMonthlyGrossSalary()
+{
+	double conveyance=800;
+	return monthlybasic + hra() + medical + conveyance;
+}
+
+void getAnnualGrossSalary()
+{
+	
+}
+
+double getMonthlyDeductions()
+{
+	double profTax;
+	double esic=4.75;
+	double answer;
+	if(monthlybasic<=10000)
+	{
+		profTax=50;
+	}
+	else
+	{
+		profTax=100;
+	}
+	if(monthlybasic>6500&&monthlybasic<4500)
+	{
+		answer=(pfRate*monthlybasic)+(esic*monthlybasic)+profTax;
+	}
+	return  
+}
+
+void getmonthlyTakeHome()
+{
+	
+}
+
+void getAnnualTakeHome()
+{
+	
+}
+double hra()
+{
+	return 12*monthlybasic;
+}
+
+}
