@@ -1,7 +1,8 @@
+//program about palindrome
 package npalindrome;
 import java.util.Scanner;
 
-public class npal
+public class npal   //class palindrome
 {
 	Scanner sc = new Scanner(System.in);
 	String []str = new String[10];
@@ -12,7 +13,7 @@ public class npal
 	int temp=0;
 	
 	for(int k=0;k<10;k++)
-	{
+	{                                              //for loop
 		System.out.println("Enter a string");
 		str[k]=sc.nextLine();
 		rev[k]="";
@@ -24,7 +25,7 @@ public class npal
 	for(int k=0;k<10;k++)
 	{
 		if(str[k].equals(rev[k]))
-		{
+		{                                    //logic
 			loc[id]=1;
 			id+=1;
 		}
@@ -51,7 +52,7 @@ public class npal
 	System.out.println("Palindrome Strings are");
 	for(int i=0;i<id;i++)
 	{
-		System.out.println(str[loc[i]]);
+		System.out.println(str[loc[i]]);             //printing result
 	}
 }
 }
