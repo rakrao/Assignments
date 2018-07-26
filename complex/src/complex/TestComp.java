@@ -1,13 +1,14 @@
+//program about complex number
 package complex;
 
 import java.util.Scanner;
 
 public class TestComp {
 	public static void main(String[] args) {
-		
+		                                          //main function
 		
 		comp Comp1=new comp();
-		comp Comp2=new comp();
+		comp Comp2=new comp();  //creating objects
 		comp Comp3=new comp();
 		
 Scanner sc = new Scanner(System.in);
