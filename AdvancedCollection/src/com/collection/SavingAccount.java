@@ -1,7 +1,11 @@
 //program to understand advanced collection
 package com.collection; //package
 
-public class SavingAccount {
+import java.io.Serializable;
+
+public class SavingAccount implements Serializable{
+
+	private static final long serialVersionUID = -4553930616944692146L;
 
 	@Override
 	public int hashCode() { // hash code and equals method
