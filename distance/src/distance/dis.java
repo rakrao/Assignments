@@ -1,20 +1,24 @@
+//program to find distance in feet and inches
 package distance;
 
 public class dis {
 	float feet;
-	float inches;
-	void set(float x,float y)
+	float inches; // instance member
+
+	void set(float x, float y) // set method
 	{
-		feet=x;
-		inches=y;
+		feet = x;
+		inches = y;
 	}
-	void display()
+
+	void display() // display method
 	{
-		System.out.println("feet="+feet);
-		System.out.println("inches="+inches);
+		System.out.println("feet=" + feet);
+		System.out.println("inches=" + inches);
 	}
-public float add(float a, float b)
-{
-	return a+b;
-}
+
+	public float add(float a, float b) // add method
+	{
+		return a + b;
+	}
 }
