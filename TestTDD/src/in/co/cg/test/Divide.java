@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import junit.framework.Assert;
 
-public class Divide {  //Divide class with different cases 
+public class Divide { // Divide class with different cases
 
 	@Test
 	public void testDivTwoPositive() {
@@ -16,7 +16,7 @@ public class Divide {  //Divide class with different cases
 	}
 
 	@Test
-	public void testDivTwoNegative() {
+	public void testDivTwoNegative() { // test cases
 		Maths math = new Maths();
 		int ans = math.div(-4, -2);
 		Assert.assertEquals(2, ans);

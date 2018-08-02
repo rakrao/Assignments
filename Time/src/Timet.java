@@ -1,22 +1,24 @@
 
-public class Timet {
+public class Timet { // test class
 	int hours;
 	int minutes;
-	
-	public int set(int x,int y)
+
+	public int set(int x, int y) // set method
 	{
-		hours=x;
-		minutes=y;
-		
-		return x+y;
+		hours = x;
+		minutes = y;
+
+		return x + y;
 	}
-	void display()
+
+	void display() // display methos
 	{
-		System.out.println("hour="+hours);
-		System.out.println("minute="+minutes);
+		System.out.println("hour=" + hours);
+		System.out.println("minute=" + minutes);
 	}
-public int add(int a, int b)
-{
-	return a+b;
-}
+
+	public int add(int a, int b) // add method
+	{
+		return a + b;
+	}
 }

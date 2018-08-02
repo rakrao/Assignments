@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import junit.framework.Assert;
 
-public class Multiply {   //multiply class with different test cases 
+public class Multiply { // multiply class with different test cases
 
 	@Test
 	public void testMulTwopositive() {
@@ -17,7 +17,7 @@ public class Multiply {   //multiply class with different test cases
 	}
 
 	@Test
-	public void testMulTwoNegative() {
+	public void testMulTwoNegative() { // test cases
 		Maths math = new Maths();
 		int ans = math.mul(-2, -2);
 		Assert.assertEquals(4, ans);

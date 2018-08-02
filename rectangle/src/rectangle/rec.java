@@ -2,12 +2,12 @@
 package rectangle;
 
 public class rec {
-int area;
-int length;
-int breadth;
+	int area; // instance member
+	int length;
+	int breadth;
 
-public int area(int x, int y)
-{
-	return x*y;
-}
+	public int area(int x, int y) // area method
+	{
+		return x * y;
+	}
 }

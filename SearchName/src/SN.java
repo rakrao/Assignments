@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class SN {
-public static void main(String[] args) {
+public static void main(String[] args) {  //main
 	int n;
-	Scanner scanner=new Scanner(System.in);
+	Scanner scanner=new Scanner(System.in);  //accepting input
 	System.out.println("Enter the number of names");
 	n=scanner.nextInt();
 	String names[]=new String[n];
@@ -16,7 +16,7 @@ public static void main(String[] args) {
 	String searchname;
 	for(i=0;i<n;i++)
 	{
-		for(int j==i;j<n;j++)
+		for(int j==i;j<n;j++)  //for loop
 		{
 			if(names[i].compareTo(searchname)==0)
 			{
@@ -25,7 +25,7 @@ public static void main(String[] args) {
 			}
 			else
 			{
-				System.out.println("Not Found");
+				System.out.println("Not Found");  //print values
 				return;
 			}
 		}
